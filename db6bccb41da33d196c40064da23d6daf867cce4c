@@ -1,0 +1,12 @@
+kafka-ui-desktop/build.sh
+  s_dfe8b907b7ca46::t_d870a30c30bea0 8
+  s_dfe8b907b7ca46::t_81eca0855e6091 59
+kafka-ui-desktop/README.md
+  s_dfe8b907b7ca46::t_6fd7c099fe7d11 19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.23",
+  "base_commit_sha": "db6bccb41da33d196c40064da23d6daf867cce4c",
+  "prompts": {}
+}
