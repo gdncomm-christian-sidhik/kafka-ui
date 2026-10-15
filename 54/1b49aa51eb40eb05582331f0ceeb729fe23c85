@@ -1,0 +1,27 @@
+kafka-ui-react-app/src/components/Dashboard/ClusterTableActionsCell.tsx
+  s_dfe8b907b7ca46::t_a59bc63e9ddfbd 6-8,11-12,18-19,28-46,48-66
+kafka-ui-react-app/src/components/Dashboard/__test__/ClusterTableActionsCell.spec.tsx
+  s_dfe8b907b7ca46::t_4b7dffd1ce9d26 1-57,59-63
+  s_dfe8b907b7ca46::t_46e8be1641d427 58
+kafka-ui-react-app/src/components/Dashboard/Dashboard.styled.ts
+  s_dfe8b907b7ca46::t_8915e888a38625 10-15
+kafka-ui-react-app/src/lib/hooks/api/appConfig.ts
+  s_dfe8b907b7ca46::t_bfd25d5911476e 54-58,62-80
+  s_dfe8b907b7ca46::t_21a96d10134673 59-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "541b49aa51eb40eb05582331f0ceeb729fe23c85",
+  "prompts": {},
+  "sessions": {
+    "s_dfe8b907b7ca46": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "14e5556f-9b00-461b-bf95-f9380313b00d",
+        "model": "unknown"
+      },
+      "human_author": "christian.sidhik <christian.sidhik@gdn-commerce.com>"
+    }
+  }
+}
