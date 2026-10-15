@@ -1,0 +1,55 @@
+kafka-ui-desktop/.gitignore
+  s_dfe8b907b7ca46::t_c55fbd0556ac75 1-3
+kafka-ui-desktop/build.sh
+  s_dfe8b907b7ca46::t_0773c9af28878c 1-27,31-42,45-54,59-61
+  s_dfe8b907b7ca46::t_acc66924b1dcec 55
+  s_dfe8b907b7ca46::t_82ff97ae3ae780 29
+  s_dfe8b907b7ca46::t_ee08b904f83c8d 28,30
+  s_dfe8b907b7ca46::t_6431a8677425de 43-44
+  s_dfe8b907b7ca46::t_630e9fe29b9a6c 56-58
+kafka-ui-desktop/README.md
+  s_dfe8b907b7ca46::t_fa4fa7d24b94eb 1-32
+kafka-ui-desktop/src-tauri/Cargo.toml
+  s_dfe8b907b7ca46::t_06332986182fdd 1-12,16-18
+  s_dfe8b907b7ca46::t_5d0ff428db222b 13-15
+kafka-ui-desktop/src-tauri/tauri.conf.json
+  s_dfe8b907b7ca46::t_c55084201bd72f 5
+  s_dfe8b907b7ca46::t_46119f9531a901 1-4,6-39
+kafka-ui-desktop/src-tauri/capabilities/default.json
+  s_dfe8b907b7ca46::t_50ead1c67aec86 1-7
+kafka-ui-desktop/src-tauri/src/main.rs
+  s_dfe8b907b7ca46::t_55eacd560e4ab8 200-224
+  s_dfe8b907b7ca46::t_b44f710edc350d 40-46
+  s_dfe8b907b7ca46::t_bd149e6165dcf0 21-27
+  s_dfe8b907b7ca46::t_5a0f3a90051b2d 1-20,28-39,47-199,225-232
+kafka-ui-desktop/src-tauri/build.rs
+  s_dfe8b907b7ca46::t_ce154c8dde171f 1-3
+kafka-ui-desktop/ui/index.html
+  s_dfe8b907b7ca46::t_dfab1894c4da58 1-49
+kafka-ui-desktop/src-tauri/Cargo.lock
+  s_5e6c50ecfd25c9::t_44f57cd67b3dfa 1-4315
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5c5e0217b6671c52e79d34d1cf56433d61511437",
+  "prompts": {},
+  "sessions": {
+    "s_5e6c50ecfd25c9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "eff232a3-529c-43ac-b07e-0f2d7d0521c2",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "christian.sidhik <christian.sidhik@gdn-commerce.com>"
+    },
+    "s_dfe8b907b7ca46": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "14e5556f-9b00-461b-bf95-f9380313b00d",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "christian.sidhik <christian.sidhik@gdn-commerce.com>"
+    }
+  }
+}
