@@ -51,6 +51,33 @@ export function useUpdateAppConfig({ initialName }: { initialName?: string }) {
   );
 }
 
+export function useDeleteClusterFromAppConfig() {
+  const client = useQueryClient();
+  return useMutation(
+    async (clusterName: string) => {
+      const existingConfig = await api.getCurrentConfig();
+      const clusters = (
+        existingConfig.properties?.kafka?.clusters || []
+      ).filter((c) => c.name !== clusterName);
+
+      const config = {
+        ...existingConfig,
+        properties: {
+          ...existingConfig.properties,
+          kafka: { clusters },
+        },
+      };
+      return api.restartWithConfig({ restartRequest: { config } });
+    },
+    {
+      onSuccess: () => {
+        client.invalidateQueries(['app', 'config']);
+        client.invalidateQueries(['clusters']);
+      },
+    }
+  );
+}
+
 export function useAppConfigFilesUpload() {
   return useMutation((payload: FormData) =>
     fetch('/api/config/relatedfiles', {

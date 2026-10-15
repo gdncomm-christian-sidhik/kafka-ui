@@ -7,3 +7,9 @@ export const Toolbar = styled.div`
   align-items: center;
   color: ${({ theme }) => theme.default.color.normal};
 `;
+
+export const ActionsCell = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+`;
