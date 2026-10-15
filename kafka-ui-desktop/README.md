@@ -16,6 +16,7 @@ You need Rust ([rustup.rs](https://rustup.rs)), JDK 17+ with `jlink`, and the Ta
 ./build.sh             # creates deb / rpm / AppImage in src-tauri/target/release/bundle/
 ./build.sh --dev       # runs the app in dev mode
 SKIP_JAR=1 ./build.sh  # reuses the existing backend jar
+BUNDLES=appimage ./build.sh  # builds only the AppImage (comma-separated: deb,rpm,appimage)
 ```
 
 ## Configuration

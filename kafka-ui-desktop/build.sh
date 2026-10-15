@@ -5,6 +5,7 @@
 #   ./build.sh            full build: jar + runtime + installers (deb/rpm/AppImage)
 #   ./build.sh --dev      jar + runtime, then `cargo tauri dev`
 #   SKIP_JAR=1 ./build.sh reuse the existing kafka-ui-api jar
+#   BUNDLES=appimage ./build.sh  only build the given bundles (comma-separated: deb,rpm,appimage)
 set -euo pipefail
 
 DESKTOP_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -55,7 +56,7 @@ else
   # linuxdeploy's bundled strip fails on newer system libraries (e.g. Arch).
   # linuxdeploy must resolve libjvm.so, which the JRE normally finds via $ORIGIN.
   LD_LIBRARY_PATH="$RES_DIR/runtime/lib/server:$RES_DIR/runtime/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}" \
-    NO_STRIP=true cargo tauri build
+    NO_STRIP=true cargo tauri build ${BUNDLES:+--bundles "$BUNDLES"}
   echo
   echo "Installers: $TAURI_DIR/target/release/bundle/"
 fi
