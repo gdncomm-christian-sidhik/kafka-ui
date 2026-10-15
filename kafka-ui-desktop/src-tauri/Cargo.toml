@@ -1,0 +1,18 @@
+[package]
+name = "kafka-ui-desktop"
+version = "0.0.1"
+description = "Desktop shell for UI for Apache Kafka"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+libc = "0.2"
+
+[profile.release]
+strip = true
+lto = true
